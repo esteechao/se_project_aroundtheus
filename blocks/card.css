@@ -1,0 +1,27 @@
+.card {
+    font-family: "inter", Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__title {
+    max-width: 226px;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+}
+
+.card__description {
+
+}
+
+.card__image {
+
+    
+}
