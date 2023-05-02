@@ -1,6 +1,7 @@
 .page {
     font-family: "Inter", Arial, Arial, Helvetica, sans-serif;
     background: #000;
+    color: white;
 }
 
 .page__content {
@@ -10,19 +11,20 @@
     -moz-osx-font-smoothing: grayscale;
     display: flex;
     flex-direction: column;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .page__section {
     width: 100%;
-    max-width: 882px;
-    box-sizing: border-box;
+    max-width: 880px;
     position: relative;
     margin: 0 auto;
 }
 
 @media screen and (max-width: 1100px) {
     .page__section {
-        margin: 0 20px 
+        margin: 0 20px; 
         max-width: calc(100% - 40px);
     }
 }
