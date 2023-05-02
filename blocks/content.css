@@ -10,6 +10,8 @@
     "title button"
     "description description"; 
     grid-template-columns: minmax(auto, 373px) auto;
+    align-items: center;
+    max-width: 415px;
 }
 
 .profile__edit-button {
@@ -17,6 +19,8 @@
     height: 24px;
     width: 24px;
     grid-area: button;
+    border: 1px solid #ffffff;
+    cursor: pointer;
 }
 
 .profile__add-button {
@@ -24,14 +28,21 @@
     width: 150px;
     height: 50px;
     margin-left: auto;
+    cursor: pointer;
+    border: 2px solid #ffffff;
 }
 
 .profile__title {
     font-size: 42px;
-    line-height: 48px;
     font-weight: 500;
+    line-height: 48px;
     grid-area: title;
     margin: 0;
+    font-family: Inter, "Arial", "Helvetica", sans-serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 373px;
 }
 
 .profile__description {
@@ -53,7 +64,6 @@
 
 @media screen and (max-width: 480px){
     .profile {
-        background: pink;
         flex-direction: column;
     }
 

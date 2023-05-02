@@ -1,8 +1,27 @@
-.footer {
-
-
-}
-
 .footer__label {
-    
-}
+    display: flex;
+    padding-top: 67px;
+    padding-bottom: 60px;
+    font-family: Inter, "Arial", "Helvetica", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: #545454;
+    margin: 0;
+  }
+  
+  @media screen and (max-width: 760px) {
+    .footer__label {
+      max-width: 581px;
+      line-height: 16.94px;
+      font-size: 14px;
+      padding: 48px 19px 36px 19px;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .footer__label {
+      max-width: 282px;
+    }
+  }

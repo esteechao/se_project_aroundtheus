@@ -11,8 +11,6 @@
     -moz-osx-font-smoothing: grayscale;
     display: flex;
     flex-direction: column;
-    margin-left: 200px;
-    margin-right: 200px;
 }
 
 .page__section {
