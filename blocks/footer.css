@@ -2,7 +2,7 @@
     display: flex;
     padding-top: 67px;
     padding-bottom: 60px;
-    font-family: Inter, "Arial", "Helvetica", sans-serif;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
@@ -17,6 +17,7 @@
       line-height: 16.94px;
       font-size: 14px;
       padding: 48px 19px 36px 19px;
+      box-sizing: border-box;
     }
   }
   

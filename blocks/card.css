@@ -21,6 +21,7 @@
 }
 
 .card__title {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
     max-width: 226px;
     font-size: 24px;
     font-weight: 900;

@@ -39,7 +39,7 @@
     line-height: 48px;
     grid-area: title;
     margin: 0;
-    font-family: Inter, "Arial", "Helvetica", sans-serif;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -47,6 +47,8 @@
 }
 
 .profile__description {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    text-overflow: ellipsis;
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
