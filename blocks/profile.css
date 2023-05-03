@@ -1,7 +1,7 @@
 .profile {
     display: flex;
-    flex-direction: column;
     padding-top: 40px;
+    margin-bottom: 51px;
 }
 
 .profile__info {
@@ -21,6 +21,7 @@
     grid-area: button;
     border: 1px solid #ffffff;
     cursor: pointer;
+    align-self: center;
 }
 
 .profile__add-button {
@@ -30,6 +31,8 @@
     margin-left: auto;
     cursor: pointer;
     border: 2px solid #ffffff;
+    border-radius: 2px;
+    align-self: center;
 }
 
 .profile__title {
