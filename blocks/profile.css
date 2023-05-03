@@ -7,8 +7,8 @@
 .profile__info {
    display: grid;
    grid-template-areas: 
-    "title button"
-    "description description"; 
+    "title button";
+    "description description";
     grid-template-columns: minmax(auto, 373px) auto;
     align-items: center;
     max-width: 415px;
@@ -52,7 +52,7 @@
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
-    grid-area: description; 
+    grid-area: description;
     margin: 0; 
 }
 
@@ -65,7 +65,8 @@
     margin-right: 24px;
 }
 
-@media screen and (max-width: 480px){
+@media screen (max-width: 480px) {
+    
     .profile {
         flex-direction: column;
     }
