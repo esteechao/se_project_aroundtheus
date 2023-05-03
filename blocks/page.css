@@ -1,14 +1,10 @@
 .page {
-    font-family: "Inter", Arial, Arial, Helvetica, sans-serif;
     background: #000;
     color: white;
 }
 
 .page__content {
-    background-color: black;
     min-height: 100vh;
-    -webit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     display: flex;
     flex-direction: column;
 }

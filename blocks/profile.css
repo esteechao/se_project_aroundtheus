@@ -7,11 +7,9 @@
 .profile__info {
    display: grid;
    grid-template-areas: 
-    "title button";
+    "title button"
     "description description";
     grid-template-columns: minmax(auto, 373px) auto;
-    align-items: center;
-    max-width: 415px;
 }
 
 .profile__edit-button {
