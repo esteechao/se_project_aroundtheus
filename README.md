@@ -1,21 +1,33 @@
-# Project 3: Around The U.S.
-
-### Overview  
-
-* Intro  
-* Figma  
-* Images  
+# Project 3: Around The U.S. 
   
 **Intro**
   
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
+This gallery project allows users to view and interact with a collection of photos in a visually appealing and user-friendly interface.  The application provides features such as browsing through different gallery cards, like, edit and the display of detailed info about each photo. 
   
-**Figma**  
+**Technologies and Techniques Used**  
   
-* [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)  
+*The Photo Gallery Web Application is built using the following technologies and techniques:
+
+HTML5: Markup language used for structuring the web pages.
+CSS3: Styling language used for designing the visual layout of the application.  
   
-**Images**  
+**Project Features**  
   
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+The key features at the moment of the Photo Gallery include:
+
+Interactive Photo Cards: Users can browse through a collection of photo cards, each representing a unique photo.  They can also like the photo as they wish. 
+
+**Github**
+
+The live version of the Photo Gallery Web Application can be accessed on GitHub Pages.
+
+**Validation**
+
+To ensure the code's integrity and validity, the following steps have been taken:
+
+1. The HTML and CSS code have been thoroughly checked for typos and errors.
+2. The code has been validated using the W3C Markup Validator to ensure compliance with HTML standards.
+3. Prettier, a code formatter, has been used to ensure consistent and well-formatted code.
+
+Feel free to explore the repository and provide any feedback or suggestions.  Enjoy! ^^
+
