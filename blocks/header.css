@@ -1,16 +1,25 @@
 .header {
   margin-top: 45px;
+  border-bottom: solid 1px rgba(84, 84, 84, 0.7);
   padding-bottom: 41px;
-  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
 }
 
-@media screen and (max-width: 572px) {
+.header__logo {
+  height: 33px;
+  width: 173px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 896px) {
   .header {
-    margin-top: 28px;
+    box-sizing: border-box;
+    padding-left: 27px;
+    padding-top: 28px;
     padding-bottom: 32px;
   }
+
   .header__logo {
+    height: 24px;
     width: 126px;
-    margin-left: 27px;
   }
 }
