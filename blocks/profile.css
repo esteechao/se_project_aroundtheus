@@ -35,10 +35,11 @@
     width: 150px;
     height: 50px;
     margin-left: auto;
+    margin-right: auto;
     cursor: pointer;
     border: 2px solid #ffffff;
     border-radius: 2px;
-    align-self: center;
+    margin-top: 20px;
 }
 
 .profile__add-button:hover {
@@ -58,6 +59,7 @@
     white-space: nowrap;
     overflow: hidden;
     max-width: 373px;
+    text-align: center;
 }
 
 .profile__description {
