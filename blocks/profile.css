@@ -1,7 +1,8 @@
 .profile {
     display: flex;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 20px;
+    margin-bottom: 30px;
   }
 
 .profile__info {
@@ -20,6 +21,8 @@
     border: 1px solid #ffffff;
     cursor: pointer;
     align-self: center;
+    margin-left: 18px;
+    padding: 0;
 }
 
 .profile__edit-button:hover {
@@ -76,32 +79,75 @@
     height: 120px;
     width: 120px;
     border-radius: 50%;
-    object-fit: cover;
-    background-position: center;
-    margin-right: 24px;
+    margin-right: 30px;
 }
 
-@media screen and (max-width: 480px) {
-    
-    .profile {
-        flex-direction: column;
-    }
-
-    .profile__info {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        padding-left: 62px;
-        padding-right: 62px;
-    }
-
-    .profile__description {
-        width: 100%;
-        text-align: center;
-    }
-
+@media screen and (max-width: 896px) {
     .profile__add-button {
-        margin: 0;
-        width: 100%;
+      margin-right: 20px;
+      margin-left: 20px;
     }
-}
+    .profile__edit-button {
+      margin-right: 18px;
+      margin-left: 14px;
+    }
+    .profile__image {
+      margin-left: 30px;
+    }
+    .profile__description {
+      font-size: 16px;
+    }
+    .profile__title {
+      margin: 0;
+      font-size: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 580px) {
+    .profile {
+      flex-direction: column;
+      padding-top: 42px;
+    }
+  
+    .profile__info {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      margin: 0;
+    }
+  
+    .profile__image {
+      margin: 0;
+    }
+    .profile__description {
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  
+    .profile__add-button {
+      width: 282px;
+      box-sizing: border-box;
+      margin: 0;
+      margin-top: 36px;
+      margin-left: 20px;
+      margin-right: 20px;
+      background-size: 16px 16px;
+    }
+  
+    .profile__title {
+      font-size: 22px;
+      line-height: 27px;
+      padding-top: 30px;
+    }
+  
+    .profile__edit-button {
+      margin-top: 26px;
+      margin-left: 10px;
+      height: 18px;
+      width: 18px;
+      background-size: 7px 7px;
+    }
+  }

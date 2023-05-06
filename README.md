@@ -19,7 +19,9 @@ Interactive Photo Cards: Users can browse through a collection of photo cards, e
 
 **Github**
 
-The live version of the Photo Gallery Web Application can be accessed on GitHub Pages.
+The live version of the Photo Gallery Web Application can be accessed on GitHub Pages here:
+
+esteechao.github.io.
 
 **Validation**
 
