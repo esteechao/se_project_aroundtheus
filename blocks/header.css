@@ -1,17 +1,18 @@
 .header {
-  margin-top: 45px;
+  margin-top: 28px;
   border-bottom: solid 1px rgba(84, 84, 84, 0.7);
-  padding-bottom: 20px;
+  padding-bottom: 32px;
   text-align: left;
 }
 
 .header__logo {
-  height: 26px;
-  width: 136px;
+  height: 24px;
+  width: 126px;
+  margin-left: 27px;
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 480px) { /* 0 - 320, should be say 480 */
+@media screen and (max-width: 760px) { /* 0 - 320, should be say 480 */
   .header {
     box-sizing: border-box;
     padding-left: 0;
@@ -20,8 +21,8 @@
   }
 
   .header__logo {
-    height: 20px;
-    width: 104px;
+    height: 24px;
+    width: 126px;
     margin: 0 auto; 
   }
   
