@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) { /* 0 - 320, should be say 480 */
   .header {
     box-sizing: border-box;
     padding-left: 0;
@@ -30,3 +30,11 @@
     margin-right: 0; 
   }
 }
+
+/*
+ 320, 480, 640, 768, 992, 1024, 1200, 1600...
+ 0 - 479 (default)
+ 1359
+  @media screen and (min-width: 480px) {}
+  @media screen and (min-width: 992px)
+*/
