@@ -11,3 +11,9 @@
     padding: 0;
     margin: 0;
 }
+
+@media screen and (max-width: 480px) {
+    .cards__list {
+      grid-gap: 10px; /* decrease the gap between cards on smaller screens */
+    }
+  }

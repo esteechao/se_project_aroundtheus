@@ -6,8 +6,8 @@
 }
 
 .header__logo {
-  height: 24px;
-  width: 126px;
+  height: 33px;
+  width: 173px;
   margin-left: 27px;
   box-sizing: border-box;
 }
@@ -17,12 +17,12 @@
     box-sizing: border-box;
     padding-left: 0;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 32px;
   }
 
   .header__logo {
-    height: 24px;
-    width: 126px;
+    height: 33px;
+    width: 173px;
     margin: 0 auto; 
   }
   
