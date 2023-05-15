@@ -1,13 +1,20 @@
 .cards {
-    padding-top: 40px;
-}
-
-.cards__list {
+    margin-top: 48px;
+    margin-bottom: 67px;
+  }
+  
+  .cards__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 282px);
     justify-content: center;
-    list-style-type: none;
+    grid-template-columns: repeat(auto-fit, 282px);
+    grid-gap: 20px 17px;
     padding: 0;
     margin: 0;
-    grid-gap: 20px 17px;
-}
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 664px) {
+    .cards {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
