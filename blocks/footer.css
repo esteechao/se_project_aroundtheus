@@ -14,16 +14,22 @@
 
 .footer__label {
   margin: 0;
+  line-height: 1.2;
 }
 
-@media screen and (max-width: 896px) {
+@media screen and (max-width: 895px) {
   .footer {
-    margin: 0;
-    padding-left: 19px;
-    padding-top: 48px;
-    padding-bottom: 36px;
+    max-width: 584px;
+    margin: 48px auto 36px;
+  }
+
+  .footer__copyright {
     font-size: 14px;
-    line-height: 17px;
-    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .footer {
+    max-width: 282px;
   }
 }
