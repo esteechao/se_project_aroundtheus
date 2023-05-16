@@ -35,7 +35,6 @@
     width: 150px;
     height: 50px;
     margin-left: auto;
-    cursor: pointer;
     border: 2px solid #ffffff;
     border-radius: 2px;
 }
@@ -50,6 +49,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    max-width: fit-content;
 }
 
 .profile__description {
@@ -62,6 +62,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    max-width: fit-content;
 }
 
 .profile__image {
@@ -70,7 +71,7 @@
     border-radius: 50%;
     object-fit: cover;
     background-position: center;
-    margin-right: 26px;
+    margin-right: 24px;
 }
 
 @media screen and (max-width:580px) {

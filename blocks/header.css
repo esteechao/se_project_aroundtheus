@@ -5,8 +5,7 @@
 }
 
 .header__image {
-  width: 173px;
-  height: 32px;
+  margin-bottom: 41px;
 }
 
 @media screen and (max-width:580px) {
@@ -16,9 +15,7 @@
   }
 
   .header__image {
-      width: 126px;
-      height: 24px;
-      padding-left: 27px;
-      padding-bottom: 32px;
+      padding-top: 45px;
+      padding-left: 30p;
   }
 }
