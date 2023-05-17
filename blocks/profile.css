@@ -49,7 +49,6 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    max-width: fit-content;
 }
 
 .profile__description {
@@ -62,7 +61,6 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    max-width: fit-content;
 }
 
 .profile__image {
@@ -71,10 +69,10 @@
     border-radius: 50%;
     object-fit: cover;
     background-position: center;
-    margin-right: 24px;
+    margin-right: 26px;
 }
 
-@media screen and (max-width:580px) {
+@media screen and (min-width:320px) and (max-width: 580px) {
   .profile {
       flex-direction: column;
   }
@@ -96,7 +94,6 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
-      max-width: fit-content;
   }
 
   .profile__title {
@@ -104,8 +101,7 @@
   }
 
   .profile__add-button {
-      margin: 0;
-      width: 282px;
+      margin-left: 200px;
   }
 
   .profile__edit-button {
