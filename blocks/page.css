@@ -7,9 +7,6 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-.page__section {
     width: 100%;
     max-width: 880px;
     position: relative;
