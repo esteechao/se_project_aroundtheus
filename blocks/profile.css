@@ -82,9 +82,10 @@
       flex-wrap: wrap;
       justify-content: center;
       width: 100%;
-      padding-top: 26.25px;
+      padding-top: 26px;
       row-gap: 0px;
       margin-right: 0;
+      padding-bottom: 36px;
   }
 
   .profile__description {
