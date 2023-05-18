@@ -11,7 +11,7 @@
     margin: 0;
   }
 
-  @media screen and (max-width: 664px) {
+  @media screen and (max-width: 664px)
     /*.cards {
       margin-top: 0;
       margin-bottom: 0;
