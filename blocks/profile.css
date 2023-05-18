@@ -72,7 +72,7 @@
     margin-right: 26px;
 }
 
-@media screen and (min-width:320px) and (max-width: 580px) {
+@media screen and (max-width: 580px) {
   .profile {
       flex-direction: column;
   }
@@ -83,6 +83,7 @@
       justify-content: center;
       width: 100%;
       padding-top: 26px;
+      padding-bottom: 32px;
       row-gap: 0px;
       margin-right: 0;
       padding-bottom: 36px;
@@ -102,7 +103,7 @@
   }
 
   .profile__add-button {
-      margin-left: 200px;
+      margin: auto;
   }
 
   .profile__edit-button {
