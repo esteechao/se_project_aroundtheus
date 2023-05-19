@@ -4,6 +4,11 @@
   font-size: 18px;
   color: rgba(84, 84, 84, 1);
 }
+
+.footer__label {
+  margin: 0px;
+}
+
 @media screen and (min-width: 940px) and (max-width: 1100px) {
   .footer {
     margin-top: 40px;
@@ -23,7 +28,6 @@
   .footer {
     font-size: 14px;
     padding-left: 19px;
-    padding-top: 48px;
     padding-bottom: 36px;
     margin: 0;
     width: 282px;
