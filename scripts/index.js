@@ -35,7 +35,7 @@ const profileDescription = document.querySelector ('.profile__description');
 const profileTitleInput = document.querySelector ('.profile-title-input');
 const profileDescriptionInput = document.querySelector ('.profile-decription-input');
 const profileEditForm = profileEditModal.querySelector(".modal__form");
-const cardListEl = document.querySelector ('.card__List');
+const cardListEl = document.querySelector ('.cards__List');
 const cardTemplate = document.querySelector("#card-template").content.firstElementChild;
 
 function closePopop() {
