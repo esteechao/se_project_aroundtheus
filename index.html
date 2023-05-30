@@ -79,12 +79,36 @@
             <button class="modal__close"></button>
                 <p class="modal__heading">Edit Profile</p>
                 <form class="modal__form">
-                <input type="text" name="title">
-                <input type="text" name="description">
+                    <input
+                    class="modal__input"
+                    name="title"
+                    id="profile-title-input"
+                    placeholder="Name"
+                    type="text"
+                />
+                <input
+                class="modal__input"
+                name="description"
+                id="profile-description-input"
+                placeholder="Description"
+                type="text"
+                />
                 <button class="modal__button">Save</button>
             </form>
         </div>
     </div>
+
+    <template id="card-template">
+        <li class="card">
+            <img class="card__image" alt="" src=""/>
+        <div class="card__description">
+            <h2 class="card__title"></h2>
+            <button class="card__like-button" type="button"></button>
+        </div>
+        </li>
+    </template>
+
+
 <script src="./scripts/index.js"></script>
 </body>
 </html>
