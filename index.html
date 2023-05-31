@@ -7,14 +7,23 @@
     <title>Around the US</title>
     <link href="./pages/index.css" rel="stylesheet" />
 </head>
+
 <body class="page">
     <div class="page__content">
         <header class="header">
-            <img src="./images/Vector.svg" alt="Around the U.S. Logo" class="header__image"/>
+            <img 
+            src="./images/Vector.svg" 
+            alt="Around the U.S. Logo" 
+            class="header__image"/>
         </header>
+
         <main class="content">
-            <section class="profile">
-                <img src="./images/jacques-cousteau.jpg" alt="Avatar" class="profile__image"/>
+            <section class="profile page__section">
+                <img 
+                src="./images/jacques-cousteau.jpg" 
+                alt="Avatar" 
+                class="profile__image"/>
+
                 <div class="profile__info">
                     <h1 class="profile__title">Jacque Cousteau</h1>
                     <button class="profile__edit-button" id="profile-edit-button" type="button"></button>
@@ -26,15 +35,17 @@
             <ul class="cards__list"></ul>
         </section>  
         </main>
+        </div>
         <footer class="footer page__section">
             <p class="footer__label">© 2022 Around the U.S.</p>
         </footer>
-    </div>
-
-    <div class="modal" id="profile-edit-modal">
-        <div class="modal__container">
-            <button class="modal__close"></button>
-                <p class="modal__heading">Edit Profile</p>
+        <div class="modal" id="profile-edit-modal">
+            <div class="modal__container">
+            <button class="modal__close"
+                    id="profile-close-modal"
+                    type="button"
+                    ></button>
+                <h2 class="modal__heading">Edit Profile</h2>
                 <form class="modal__form">
                     <input
                     class="modal__input"
@@ -42,6 +53,7 @@
                     id="profile-title-input"
                     placeholder="Name"
                     type="text"
+                    required
                 />
                 <input
                 class="modal__input"
@@ -49,8 +61,9 @@
                 id="profile-description-input"
                 placeholder="Description"
                 type="text"
+                required
                 />
-                <button class="modal__button">Save</button>
+                <button class="modal__button" type="submit">Save</button>
             </form>
         </div>
     </div>
@@ -64,8 +77,6 @@
         </div>
         </li>
     </template>
-
-
 <script src="./scripts/index.js"></script>
 </body>
 </html>
