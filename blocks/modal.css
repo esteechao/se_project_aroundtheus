@@ -4,41 +4,43 @@
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 999;
-    display: flex;
-    padding: 0 19px;
-    display: none;
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal_opened {
+    z-index: 999;
+    display: none;
+    padding: 0 19px;
+  }
+  
+  .modal_opened {
     display: flex;
-}
-
-.modal__container {
+  }
+  
+  .modal__container {
     position: relative;
+    padding: 36px;
     background-color: #fff;
     margin: auto;
-    padding: 36px;
     border-radius: 10px;
-}
-
-.modal__close {
+    width: 430px;
+  }
+  .modal__close {
     border: none;
-    background-image: url(../images/Close\ Icon.svg);
+    background-color: transparent;
+  
     position: absolute;
     bottom: calc(100% + 5px);
     left: calc(100% + 5px);
     width: 40px;
     height: 40px;
-    background-color: transparent;
+    background-image: url(../images/close-icon.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: transparent;
+  }
+  .modal__close:hover {
+    opacity: 0.6;
     cursor: pointer;
-}
-
-.modal__heading {
+  }
+  
+  .modal__heading {
     color: #000;
     font-family: "Inter", Arial, sans-serif;
     font-style: normal;
