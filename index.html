@@ -23,101 +23,116 @@
                 src="./images/jacques-cousteau.jpg" 
                 alt="Avatar" 
                 class="profile__image"/>
-
                 <div class="profile__info">
-                    <h1 class="profile__title">Jacque Cousteau</h1>
-                    <button class="profile__edit-button" 
-                    id="profile-edit-button" 
-                    type="button"></button>
-                    <p class="profile__description">Explorer</p>
-                </div>
-            <button class="profile__add-button" type="button"></button>
-        </section> 
-        <section class="cards page__section">
-            <ul class="cards__list"></ul>
-        </section>  
-        </main>
-        </div>
-        <footer class="footer page__section">
-            <p class="footer__label">© 2022 Around the U.S.</p>
-        </footer>
-        <div class="modal" id="profile-edit-modal">
-            <div class="modal__container">
-            <button class="modal__close"
-                    id="profile-close-modal"
-                    type="button"
+                    <h1 class="profile__title">Jacques Cousteau</h1>
+                    <button
+                      class="profile__edit-button"
+                      id="profile-edit-button"
+                      type="button"
                     ></button>
-                <h2 class="modal__heading">Edit Profile</h2>
-                <form class="modal__form">
-                    <input
-                    class="modal__input"
-                    name="title"
-                    id="profile-title-input"
-                    placeholder="Name"
-                    type="text"
-                    required
-                />
-                <input
-                class="modal__input"
-                name="description"
-                id="profile-description-input"
-                placeholder="Description"
-                type="text"
-                required
-                />
-                <button class="modal__button" type="submit">Save</button>
-            </form>
-        </div>
-    </div>
-    <div class="modal" id="profile-edit-modal">
-        <div class="modal__container">
-        <button class="modal__close"
-                id="profile-close-modal"
-                type="button"
+                    <p class="profile__description">Explorer</p>
+                  </div>
+                  <button class="profile__add-button" type="button"></button>
+                </section>
+                <section class="cards page__section">
+                  <ul class="cards__list"></ul>
+                </section>
+              </main>
+              <footer class="footer page__section">
+                <p class="footer__copyright">2022</p>
+              </footer>
+            </div>
+            <!-- edit modal -->
+            <div class="modal" id="edit-modal">
+              <div class="modal__container">
+                <button
+                  class="modal__close"
+                  type="button"
+                  id="profile-modal-close"
                 ></button>
-            <h2 class="modal__heading">New Place</h2>
-            <form class="modal__form">
-                <input
-                class="modal__input_title"
-                name="title"
-                id="card-title-input"
-                placeholder="Title"
-                type="text"
-                required
-            />
-            <input
-            class="modal__input_url"
-            name="url"
-            id="profile-description-input"
-            placeholder="Image URL"
-            type="text"
-            required
-            />
-            <button class="modal__button" type="submit">Save</button>
-        </form>
-    </div>
-    </div>
-    <div class="modal" id=""image-preview-modal">
-        <div class=""modal_image-container">
-        <button
-        class=""modal__close modal__close_type_button"
-        type="button"></button>
-        <img class="modal__card-image-preview" alt="latemar" 
-        src="https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/latemar.jpg"
-        />
-        <p class="modal__image-title"></p>
-    </div>
-    </div>
-    <template id="card-template">
-        <li class="card">
-            <img class="card__image" alt="" src=""/>
-        <div class="card__description">
-            <h2 class="card__title"></h2>
-            <button class="card__like-button" type="button"></button>
-        </div>
-        </li>
-    </template>
-    
-<script src="./scripts/index.js"></script>
-</body>
-</html>
+                <h3 class="modal__heading">Edit Profile</h3>
+                <form class="modal__form" id="edit-profile-form">
+                  <label class="modal__label">
+                    <input
+                      class="modal__input modal__input_type_name"
+                      type="text"
+                      name="title"
+                      id="owner-name"
+                      placeholder="Title"
+                      required
+                    />
+                    <span class="modal__error" id="owner-name-error"></span>
+                  </label>
+                  <label class="modal__label">
+                    <input
+                      class="modal__input modal__input_type_description"
+                      type="text"
+                      name="description"
+                      id="owner-description"
+                      placeholder="Description"
+                      required
+                    />
+                    <span class="modal__error" id="owner-description-error"></span>
+                  </label>
+                  <button class="button modal__button" type="submit">Save</button>
+                </form>
+              </div>
+            </div>
+            <!-- Add Card Modal  -->
+            <div class="modal" id="add-card-modal">
+              <div class="modal__container">
+                <button class="modal__close" type="button"></button>
+                <h3 class="modal__heading">New Place</h3>
+                <form class="modal__form" id="add-card-form">
+                  <label class="modal__label">
+                    <input
+                      class="modal__input modal__input_type_title"
+                      type="text"
+                      name="title"
+                      placeholder="Title"
+                      required
+                      id="image-title"
+                    />
+                    <span class="modal__error" id="image-title-error"></span>
+                  </label>
+                  <label class="modal__label">
+                    <input
+                      class="modal__input modal__input_type_url"
+                      type="url"
+                      name="URL"
+                      placeholder="Image URL"
+                      required
+                      id="image-url"
+                    />
+                    <span class="modal__error" id="image-url-error"></span>
+                  </label>
+                  <button class="button modal__button" type="submit">Save</button>
+                </form>
+              </div>
+            </div>
+            <!-- image modal -->
+            <div class="modal" id="image-modal">
+              <div class="modal__preview-container">
+                <button
+                  class="modal__close"
+                  id="preview-modal-close"
+                  type="button"
+                ></button>
+                <img class="modal__preview-image" src="#" alt=" " />
+                <p class="modal__preview-title"></p>
+              </div>
+            </div>
+            <!-- Template -->
+            <template id="card-template">
+              <li class="card">
+                <img src="#" class="card__image" alt=" " />
+                <div class="card__description">
+                  <h2 class="card__title"></h2>
+                  <button class="card__like-button" type="button"></button>
+                </div>
+                <button class="card__delete-button" type="button"></button>
+              </li>
+            </template>
+            <script src="./scripts/index.js"></script>
+          </body>
+        </html>
