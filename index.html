@@ -69,7 +69,45 @@
             </form>
         </div>
     </div>
-
+    <div class="modal" id="profile-edit-modal">
+        <div class="modal__container">
+        <button class="modal__close"
+                id="profile-close-modal"
+                type="button"
+                ></button>
+            <h2 class="modal__heading">New Place</h2>
+            <form class="modal__form">
+                <input
+                class="modal__input_title"
+                name="title"
+                id="card-title-input"
+                placeholder="Title"
+                type="text"
+                required
+            />
+            <input
+            class="modal__input_url"
+            name="url"
+            id="profile-description-input"
+            placeholder="Image URL"
+            type="text"
+            required
+            />
+            <button class="modal__button" type="submit">Save</button>
+        </form>
+    </div>
+    </div>
+    <div class="modal" id=""image-preview-modal">
+        <div class=""modal_image-container">
+        <button
+        class=""modal__close modal__close_type_button"
+        type="button"></button>
+        <img class="modal__card-image-preview" alt="latemar" 
+        src="https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/latemar.jpg"
+        />
+        <p class="modal__image-title"></p>
+    </div>
+    </div>
     <template id="card-template">
         <li class="card">
             <img class="card__image" alt="" src=""/>
@@ -79,6 +117,7 @@
         </div>
         </li>
     </template>
+    
 <script src="./scripts/index.js"></script>
 </body>
 </html>

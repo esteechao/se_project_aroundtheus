@@ -18,7 +18,6 @@ const initialCards = [
     {
         name: "Vanoise National Park",
         link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/vanoise.jpg",
-
     },
     {
         name: "Lago di Braies",
@@ -26,8 +25,11 @@ const initialCards = [
     },
 ];
 
-// Elements//
-
+/***************************************
+ *                                      *
+ *               Elements               *
+ *                                      *
+ ***************************************/
 const profileEditButton = document.querySelector("#profile-edit-button");
 const profileEditModal = document.querySelector("#profile-edit-modal");
 const profileCloseModal = document.querySelector("#profile-close-modal");
