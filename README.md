@@ -8,8 +8,9 @@ This gallery project allows users to view and interact with a collection of phot
   
 *The Photo Gallery Web Application is built using the following technologies and techniques:
 
+JavaScript
 HTML5: Markup language used for structuring the web pages.
-CSS3: Styling language used for designing the visual layout of the application.  
+CSS3: Styling language used for designing the visual layout of the application.
   
 **Project Features**  
   
