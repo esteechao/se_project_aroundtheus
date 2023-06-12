@@ -135,7 +135,7 @@ function getCardElement(data) {
   });
 
   likeButton.addEventListener("click", () => {
-    likeButton.classList.toggle("card__like-button_active");
+    likeButton.classList.toggle(".card__like-button_active");
   });
 
   cardImage.src = data.link;

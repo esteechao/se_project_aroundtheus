@@ -6,12 +6,19 @@
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
-    display: none;
+    display: flex;
     padding: 0 19px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+    display: flex;
   }
+    
   
   .modal_opened {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
   }
   
   .modal__container {

@@ -1,7 +1,6 @@
 .card {
     display: flex;
     flex-direction: column;
-    list-style: none;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -23,6 +22,7 @@
     width: 282px;
     height: 282px;
     border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
 }
 
 .card__description {
@@ -42,9 +42,9 @@
     background: transparent url(../images/Vector\ \(3\).svg) center no-repeat;
     width: 21px;
     height: 18px;
-    border: none;
     cursor: pointer;
     padding-right: 20px;
+    border-style: none;
 }
 
 .card__like-button:hover {
