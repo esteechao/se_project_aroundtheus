@@ -117,6 +117,18 @@ function handleAddCardFormSubmit(evt) {
   );
 }
 
+function toggleButtonState(inputs, buttonElements, confit) {
+  const isValid = inputs.every((input) => input.validity.valid);
+
+  if (isValid) {
+    buttonElement.disabled = false;
+    buttonElement.classList.remove(config.inactiveButtonClass);
+  } else {
+    buttonElement.disabled = true;
+    buttonElement.classList.add(config.inactiveButtonClass);
+  }
+}
+
 function getCardElement(data) {
   const cardElement = cardTemplate.cloneNode(true);
   const cardImage = cardElement.querySelector(".card__image");
