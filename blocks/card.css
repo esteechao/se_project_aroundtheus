@@ -40,13 +40,20 @@
 }
 
 .card__like-button {
-    background: transparent url(/images/Vector\ \(3\).svg) center no-repeat;
+    background: transparent url(../images/Vector\ \(6\).svg) center no-repeat;
     width: 21px;
     height: 18px;
     cursor: pointer;
     padding-right: 20px;
     border-style: none;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
+
+.card__like-button_active {
+    background-image: url(../images/Union.svg);
+  }
 
 .card__like-button:hover {
     opacity: 50%;
