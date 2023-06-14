@@ -117,15 +117,15 @@ function handleAddCardFormSubmit(evt) {
   );
 }
 
-function toggleButtonState(inputs, buttonElements, confit) {
+function toggleButtonState(inputs, buttonElements, config) {
   const isValid = inputs.every((input) => input.validity.valid);
 
   if (isValid) {
-    buttonElement.disabled = false;
-    buttonElement.classList.remove(config.inactiveButtonClass);
+    buttonElements.disabled = false;
+    buttonElements.classList.remove(config.inactiveButtonClass);
   } else {
-    buttonElement.disabled = true;
-    buttonElement.classList.add(config.inactiveButtonClass);
+    buttonElements.disabled = true;
+    buttonElements.classList.add(config.inactiveButtonClass);
   }
 }
 
