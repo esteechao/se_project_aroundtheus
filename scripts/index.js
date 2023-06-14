@@ -112,12 +112,11 @@ function handleAddCardFormSubmit(evt) {
   addCardFormElement.reset();
   toggleButtonState(
     [cardTitleInput, cardUrlInput],
-    cardAddSubmitButton,
-    config
+    cardAddSubmitButton
   );
 }
 
-function toggleButtonState(inputs, buttonElements, config) {
+function toggleButtonState(inputs, buttonElements) {
   const isValid = inputs.every((input) => input.validity.valid);
 
   if (isValid) {

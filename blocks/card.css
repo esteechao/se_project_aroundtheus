@@ -53,6 +53,23 @@
     cursor: pointer;
 }
 
+.card__delete-button {
+    background: transparent url(../images/Trash.svg) center no-repeat;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    width: 18px;
+    height: 19px;
+    border-style: none;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .card__delete-button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
 @media screen and (max-width: 568px) {
     .card__list {
         padding: 15px 0 18px;
