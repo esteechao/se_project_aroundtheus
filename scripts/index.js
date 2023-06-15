@@ -110,22 +110,7 @@ function handleAddCardFormSubmit(evt) {
   closeModal(addCardModal);
 
   addCardFormElement.reset();
-  toggleButtonState(
-    [cardTitleInput, cardUrlInput],
-    cardAddSubmitButton
-  );
-}
-
-function toggleButtonState(inputs, buttonElements) {
-  const isValid = inputs.every((input) => input.validity.valid);
-
-  if (isValid) {
-    buttonElements.disabled = false;
-    buttonElements.classList.remove(config.inactiveButtonClass);
-  } else {
-    buttonElements.disabled = true;
-    buttonElements.classList.add(config.inactiveButtonClass);
-  }
+  
 }
 
 function getCardElement(data) {
