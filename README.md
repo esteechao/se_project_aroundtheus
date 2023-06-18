@@ -6,7 +6,7 @@ This gallery project allows users to view and interact with a collection of phot
   
 **Technologies and Techniques Used**  
   
-*The Photo Gallery Web Application is built using the following technologies and techniques:
+*The Photo Gallery Web Application is built using the following techniques:
 
 JavaScript: An object-oriented language used to create some interactive pieces on my project. 
 HTML5: Markup language used for structuring the web pages.
@@ -16,7 +16,7 @@ CSS3: Styling language used for designing the visual layout of the application.
   
 The key features at the moment of the Photo Gallery include:
 
-Interactive Photo Cards: Users can browse through a collection of photo cards, each representing a unique photo.  They can also like the photo as they wish. 
+Interactive Photo Cards: Users can browse through a collection of photo cards, each representing a unique photo.  They can also like the photo, delete the photo card, edit the photo card as they wish. 
 
 **Github**
 
@@ -33,4 +33,3 @@ To ensure the code's integrity and validity, the following steps have been taken
 3. Prettier, a code formatter, has been used to ensure consistent and well-formatted code.
 
 Feel free to explore the repository and provide any feedback or suggestions.  Enjoy! ^^
-
