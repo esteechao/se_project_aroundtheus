@@ -2,11 +2,11 @@
   
 **Intro**
   
-This gallery project allows users to view and interact with a collection of photos in a visually appealing and user-friendly interface.  The application provides features such as browsing through different gallery cards, like, edit and the display of detailed info about each photo. 
+This application allows users to upload photos with custom captions to a personal photo collection. Users may also create a custom profile. I built modals windows and unique client-side form validation behavior to improve the user's experience. 
   
 **Technologies and Techniques Used**  
   
-*The Photo Gallery Web Application is built using the following techniques:
+*The Web Application is built using the following techniques:
 
 JavaScript: An object-oriented language used to create some interactive pieces on my project. 
 HTML5: Markup language used for structuring the web pages.
