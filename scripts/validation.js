@@ -1,6 +1,16 @@
 // enabling validation by calling enableValidation()
 // pass all the settings on call
 
+function showInputError () {
+
+}
+
+function checkInputValidity() {
+    
+}
+
+
+
 function setEventListeners(formEl, content) {
     const { inputSelector } = content;
     const inputEls = [...formEl.querySelectorAll(inputSelector)];
@@ -26,7 +36,7 @@ function setEventListeners(formEl, content) {
     });
   }
 
-  
+
 
 function setEventListener(formEl, options);
 //look for all inputs inside of form
