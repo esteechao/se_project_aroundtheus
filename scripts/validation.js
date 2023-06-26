@@ -13,18 +13,20 @@ function checkInputValidity(inputEl, submitButton, content) {
         hideInputError(formEl, inputEl, content);
 }
 
+function hasInvalidInput(inputList) {
+    return !input.every((inputEl) => inputEl.validity.valid)
+}
+
+// disableButton
+
+// enableButton
+
 function toggleButtonState(inputEls, submitButton, { inactiveButtonClass }) {
-    let foundInvlid = false;
 
-    inputEls.forEach(input => {
-        if(!inputEl.validity.valid) {
-            foundInvalid = true;
-        }
-    });
-
-    if(foundInvalid) {
+    if(foundinInvalid(inputEls)) {
         submitButton.classList.add(inactiveButtonClass);
-        return submitButton.disabled = true;
+       submitButton.disabled = true;
+       return;
     }
         submitButton.classList.remove(inactiveButtonClass);
         submitButton.disabled = false;
