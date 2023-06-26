@@ -3,7 +3,7 @@
 
 const enableValidation(options) {
     console.log{options};
-    const formEls = [...document.querySelectorAll(".modal__form")];
+    const formEls = [...document.querySelectorAll("options.formSelector")];
     formEls.forEach((formEl) => {
         formEl.addEventListener('submit', (e) => {
             e.preventDefault();
