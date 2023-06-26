@@ -26,7 +26,8 @@ function setEventListeners(formEl, content) {
     });
   }
 
-setEventListener(formEl, options);
+  
+function setEventListener(formEl, options);
 //look for all inputs inside of form
 //loop through all the inputs to see if all are valid
 //if input is not valid 
