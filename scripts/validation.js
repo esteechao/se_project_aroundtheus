@@ -3,7 +3,7 @@
 
 function showInputError (formEl, inputEl, content) {
     const errorMessageEl = formEl.querySelector(`#${inputEl.id}-error`);
-    console.log(errorMessageEl);
+    inputEl.classList.add(options.inputErrorClass);
 }
 
 function checkInputValidity(inputEl, submitButton, content) {
@@ -13,7 +13,6 @@ function checkInputValidity(inputEl, submitButton, content) {
         hideInputError(formEl, inputEl, content);
     }
 }
-
 
 
 function setEventListeners(formEl, content) {
@@ -29,7 +28,6 @@ function setEventListeners(formEl, content) {
     });
   }
    
-
 
   function enableValidation(content) {
     const formEls = [...document.querySelectorAll(content.formSelector)];
