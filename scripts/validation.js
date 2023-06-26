@@ -8,12 +8,27 @@ function showInputError (formEl, inputEl, content) {
 
 function checkInputValidity(inputEl, submitButton, content) {
     if (!inputEl.validity.valid) {
-        showInputError(formEl, inputEl, content);
-    } else {
-        hideInputError(formEl, inputEl, content);
+    return showInputError(formEl, inputEl, content);
     }
+        hideInputError(formEl, inputEl, content);
 }
 
+function toggleButtonState(inputEls, submitButton, { inactiveButtonClass }) {
+    let foundInvlid = false;
+
+    inputEls.forEach(input => {
+        if(!inputEl.validity.valid) {
+            foundInvalid = true;
+        }
+    });
+
+    if(foundInvalid) {
+        submitButton.classList.add(inactiveButtonClass);
+        return submitButton.disabled = true;
+    }
+        submitButton.classList.remove(inactiveButtonClass);
+        submitButton.disabled = false;
+}
 
 function setEventListeners(formEl, content) {
     const { inputSelector } = content;
@@ -23,7 +38,7 @@ function setEventListeners(formEl, content) {
     inputEls.forEach((inputEl) => {
       inputEl.addEventListener("input", (e) => {
         checkInputValidity(formEl, inputEl, content);
-        toggleButtonState(inputEl, submitButton, content);
+        toggleButtonState(inputEls, submitButton, content);
       });
     });
   }
@@ -38,7 +53,6 @@ function setEventListeners(formEl, content) {
       setEventListeners(formEl, content);
     });
   }
-
 
 
 function setEventListener(formEl, options);
