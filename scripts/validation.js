@@ -1,6 +1,10 @@
 // enabling validation by calling enableValidation()
 // pass all the settings on call
 
+const enableValidation(config) {
+    console.log{config};
+}
+
 const config = {
     formSelector: ".popup__form",
     inputSelector: ".popup__input",
