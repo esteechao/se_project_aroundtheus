@@ -1,12 +1,16 @@
 // enabling validation by calling enableValidation()
 // pass all the settings on call
 
-function showInputError () {
-
+function showInputError (formEl, inputEl, content) {
+    
 }
 
-function checkInputValidity() {
-    
+function checkInputValidity(inputEl, submitButton, content) {
+    if (!inputEl.validity.valid) {
+        showInputError(formEl, inputEl, content);
+    } else {
+        hideInputError(formEl, inputEl, content);
+    }
 }
 
 
@@ -19,7 +23,7 @@ function setEventListeners(formEl, content) {
     inputEls.forEach((inputEl) => {
       inputEl.addEventListener("input", (e) => {
         checkInputValidity(formEl, inputEl, content);
-        toggleButtonState(inputEls, submitButton, content);
+        toggleButtonState(inputEl, submitButton, content);
       });
     });
   }
