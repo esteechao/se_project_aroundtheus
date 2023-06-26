@@ -2,7 +2,8 @@
 // pass all the settings on call
 
 function showInputError (formEl, inputEl, content) {
-    
+    const errorMessageEl = formEl.querySelector(`#${inputEl.id}-error`);
+    console.log(errorMessageEl);
 }
 
 function checkInputValidity(inputEl, submitButton, content) {
