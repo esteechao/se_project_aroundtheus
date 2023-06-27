@@ -1,11 +1,14 @@
 // enabling validation by calling enableValidation()
 // pass all the settings on call
 
-function showInputError (formEl, inputEl, content) {
+function showError(formEl, inputEl, { inputErrorClass, errorClass }) {
     const errorMessageEl = formEl.querySelector(`#${inputEl.id}-error`);
     inputEl.classList.add(options.inputErrorClass);
 }
 
+// ! ||--------------------------------------------------------------------------------||
+// ! ||                           Validity Check and Input                           ||
+// ! ||--------------------------------------------------------------------------------||
 function checkInputValidity(inputEl, submitButton, content) {
     if (!inputEl.validity.valid) {
     return showInputError(formEl, inputEl, content);
@@ -17,9 +20,18 @@ function hasInvalidInput(inputList) {
     return !input.every((inputEl) => inputEl.validity.valid)
 }
 
-// disableButton
+// ! ||--------------------------------------------------------------------------------||
+// ! ||                                  Button State                                  ||
+// ! ||--------------------------------------------------------------------------------||
+const disableButton = (submitButton, { inactiveButtonClass }) => {
+  submitButton.classList.add(inactiveButtonClass);
+  submitButton.disabled = true;
+};
 
-// enableButton
+const enableButton = (submitButton, { inactiveButtonClass }) => {
+  submitButton.classList.remove(inactiveButtonClass);
+  submitButton.disabled = false;
+};
 
 function toggleButtonState(inputEls, submitButton, { inactiveButtonClass }) {
 
@@ -31,6 +43,9 @@ function toggleButtonState(inputEls, submitButton, { inactiveButtonClass }) {
         submitButton.classList.remove(inactiveButtonClass);
         submitButton.disabled = false;
 }
+// ! ||--------------------------------------------------------------------------------||
+// ! ||                             Listener and Validation                            ||
+// ! ||--------------------------------------------------------------------------------||
 
 function setEventListeners(formEl, content) {
     const { inputSelector } = content;
@@ -55,20 +70,6 @@ function setEventListeners(formEl, content) {
       setEventListeners(formEl, content);
     });
   }
-
-
-function setEventListener(formEl, options);
-//look for all inputs inside of form
-//loop through all the inputs to see if all are valid
-//if input is not valid 
-//get validation message
-//add error class to input
-//display error message
-//disable button
-//if all inputs are valid 
-//enable button
-//reset error messages
-
 
 const config = {
     formSelector: ".modal__form",
