@@ -1,11 +1,11 @@
-// enabling validation by calling enableValidation()
-// pass all the settings on call
+// ! ||--------------------------------------------------------------------------------||
+// ! ||                                  Error Message                                 ||
+// ! ||--------------------------------------------------------------------------------||
 
 function showError(formEl, inputEl, { inputErrorClass, errorClass }) {
     const errorMessageEl = formEl.querySelector(`#${inputEl.id}-error`);
     inputEl.classList.add(options.inputErrorClass);
 }
-
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                           Validity Check and Input                           ||
 // ! ||--------------------------------------------------------------------------------||
@@ -19,7 +19,6 @@ function checkInputValidity(inputEl, submitButton, content) {
 function hasInvalidInput(inputList) {
     return !input.every((inputEl) => inputEl.validity.valid)
 }
-
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Button State                                  ||
 // ! ||--------------------------------------------------------------------------------||
@@ -46,7 +45,6 @@ function toggleButtonState(inputEls, submitButton, { inactiveButtonClass }) {
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                             Listener and Validation                            ||
 // ! ||--------------------------------------------------------------------------------||
-
 function setEventListeners(formEl, content) {
     const { inputSelector } = content;
     const inputEls = [...formEl.querySelectorAll(inputSelector)];
