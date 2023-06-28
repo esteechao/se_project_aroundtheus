@@ -155,11 +155,11 @@
   }
 
   .modal__button:hover:not(:disabled)  {
-    cursor: default;
+    cursor: pointer;
     opacity: 0.8;
   }
 
-  .modal__button_disabled:hover {
+  .modal__button_disabled {
     opacity: 0.2;
     cursor: default;
 }
