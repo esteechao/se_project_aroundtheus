@@ -70,7 +70,7 @@ function closeModal(modal) {
 function openModal(modal) {
   modal.classList.add("modal_opened");
   document.addEventListener("keyup", closeByEscape);
-  modal.addEventListener("mousedown", closeByClick);
+  modal.addEventListener(closeByClick);
 }
 
 function closeByEscape(evt) {
@@ -81,7 +81,7 @@ function closeByEscape(evt) {
   }
 }
 
-function closeByClick(evt, modal) {
+function closeByClick(evt) {
   if (
     evt.target === evt.currentTarget ||
     evt.target.classList.contains("modal__close")
