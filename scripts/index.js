@@ -64,13 +64,13 @@ const cardUrlInput = addCardFormElement.querySelector(".modal__input_type_url");
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
-  document.removeEventListener("keyup", closeByEscape);
+  document.removeEventListener("keydown", closeByEscape);
 }
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
-  document.addEventListener("keyup", closeByEscape);
-  modal.addEventListener(closeByClick);
+  document.addEventListener("keydown", closeByEscape);
+  modal.addEventListener("mousedown", closeByClick);
 }
 
 function closeByEscape(evt) {
@@ -107,8 +107,8 @@ function handleAddCardFormSubmit(evt) {
   const link = cardUrlInput.value;
   renderCard({ name, link }, cardsWrap);
   closeModal(addCardModal);
-
   addCardFormElement.reset();
+  toggleButtonState([cardTitleInput, cardUrlInput], addCardSubmitBtn, config);
   
 }
 

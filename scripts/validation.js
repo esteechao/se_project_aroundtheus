@@ -8,6 +8,13 @@ function showError(formEl, inputEl, { inputErrorClass, errorClass }) {
     errorMessageEl.textContent = inputEl.validationMessage;
     errorMessageEl.classList.add(errorClass);
 }
+
+function hideError(formEl, inputEl, { inputErrorClass, errorClass }) {
+  const errorMessageEl = formEl.querySelector(`#${inputEl.id}-error`);
+  inputEl.classList.remove(inputErrorClass);
+  errorMessageEl.textContent = "";
+  errorMessageEl.classList.remove(errorClass);
+}
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                           Validity Check and Input                           ||
 // ! ||--------------------------------------------------------------------------------||
@@ -50,7 +57,7 @@ const toggleButtonState = (inputEl, submitButton, { inactiveButtonClass }) => {
 function setEventListeners(formEl, content) {
     const { inputSelector } = content;
     const inputEls = [...formEl.querySelectorAll(inputSelector)];
-    const submitButton = formEl.querySelector(".modal__button");
+    const submitButton = content.querySelector(".modal__button");
   
     inputEls.forEach((inputEl) => {
       inputEl.addEventListener("input", (e) => {
