@@ -24,6 +24,7 @@
     opacity: 0.2;
     border: 1px solid #000000;
     border-radius: 2px;
+    cursor: default;
   }
   .modal__error {
     opacity: 1;
@@ -158,11 +159,6 @@
     cursor: pointer;
     opacity: 0.8;
   }
-
-  .modal__button_disabled {
-    opacity: 0.2;
-    cursor: default;
-}
 
   @media screen and (max-width: 630px) {
     .modal__close {
