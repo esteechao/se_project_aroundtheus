@@ -66,7 +66,7 @@ function setEventListeners(formEl, content) {
       });
     });
 
-    disableButton(submitButton, { inactiveButtonClass });
+    disableButton(submitButton, content);
   }
    
 
