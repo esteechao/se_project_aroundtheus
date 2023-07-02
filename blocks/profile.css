@@ -40,6 +40,10 @@
     border-radius: 2px;
 }
 
+.profile__add-button:hover {
+    cursor: pointer;
+}
+
 .profile__title {
     font-family: "Inter", Arial, sans-serif;
     font-size: 42px;
