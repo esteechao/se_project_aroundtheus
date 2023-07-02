@@ -29,7 +29,9 @@ const cardTemplate = document
   .querySelector("#card-template")
   .content.querySelector(".card");
 
-//wrappers
+// ! ||--------------------------------------------------------------------------------||
+// ! ||                                  Wrappers                                      ||
+// ! ||--------------------------------------------------------------------------------||
 const cardsWrap = document.querySelector(".cards__list");
 const editProfileModal = document.querySelector("#edit-modal");
 const addCardModal = document.querySelector("#add-card-modal");
@@ -40,7 +42,9 @@ const previewImageModal = document.querySelector("#image-modal");
 const previewImage = previewImageModal.querySelector(".modal__preview-image");
 const previewTitle = previewImageModal.querySelector(".modal__preview-title");
 
-// buttons and dom nodes
+// ! ||--------------------------------------------------------------------------------||
+// ! ||                                  Buttons and DOM nodes                         ||
+// ! ||--------------------------------------------------------------------------------||
 const profileEditButton = document.querySelector(".profile__edit-button");
 const profileModalCloseButton = editProfileModal.querySelector(".modal__close");
 const addCardModalCloseButton = addCardModal.querySelector(".modal__close");
@@ -52,7 +56,9 @@ const previewModalCloseButton =
 
 const cardAddSubmitButton = addCardModal.querySelector(".modal__button");
 
-// form data
+// ! ||--------------------------------------------------------------------------------||
+// ! ||                                  form data                                     ||
+// ! ||--------------------------------------------------------------------------------||
 const nameInput = profileFormElement.querySelector(".modal__input_type_name");
 const jobInput = profileFormElement.querySelector(
   ".modal__input_type_description"
@@ -141,11 +147,9 @@ function getCardElement(data) {
   return cardElement;
 }
 
-/***************************************
- *                                      *
- *            Event Listeners           *
- *                                      *
- ***************************************/
+// ! ||--------------------------------------------------------------------------------||
+// ! ||                                  Event Listeners                               ||
+// ! ||--------------------------------------------------------------------------------||
 previewModalCloseButton.addEventListener("click", () =>
   closeModal(previewImageModal)
 );
