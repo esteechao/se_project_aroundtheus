@@ -18,10 +18,10 @@ function hideError(formEl, inputEl, { inputErrorClass, errorClass }) {
 // ! ||--------------------------------------------------------------------------------||
 function checkInputValidity(formEl, inputEl, content) {
   if (!inputEl.validity.valid) {
-    return showInputError(formEl, inputEl, content);
+    return showError(formEl, inputEl, content);
   }
 
-  hideInputError(formEl, inputEl, content);
+  hideError(formEl, inputEl, content);
 }
  
 function hasInvalidInput(inputList) {
