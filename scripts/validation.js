@@ -19,19 +19,19 @@ function hideError(formEl, inputEl, { inputErrorClass, errorClass }) {
 // ! ||--------------------------------------------------------------------------------||
 function checkInputValidity(formEl, inputEl, content) {
   if (!inputEl.validity.valid) {
-    showError(formEl, inputEl, content);
-  } else {
-    hideError(formEl, inputEl, content);
+    return showInputError(formEl, inputEl, options);
   }
-}
 
+  hideInputError(formEl, inputEl, options);
+}
+ 
 function hasInvalidInput(inputList) {
-    return !input.every((inputEl) => inputEl.validity.valid)
+    return !input.every((inputEl) => inputEl.validity.valid);
 }
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Button State                                  ||
 // ! ||--------------------------------------------------------------------------------||
-const disableButton = (submitButton, { inactiveButtonClass }) => {
+const disableSubmitButton = (submitButton, { inactiveButtonClass }) => {
   submitButton.classList.add(inactiveButtonClass);
   submitButton.disabled = true;
 };
