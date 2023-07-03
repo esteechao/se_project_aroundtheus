@@ -81,17 +81,16 @@ function openModal(modal) {
 }
 
 function closeByEscape(evt) {
-  if (evt.key === "Escape") {
+  if (evt.key === "escape") {
     const openedModal = document.querySelector(".modal_opened");
-
     closeModal(openedModal);
   }
 }
 
 function closeByClick(evt) {
   if (
-    evt.target === evt.currentTarget ||
-    evt.target.classList.contains("modal__close")
+    evt.target.classList.contains("modal_close") ||
+    evt.target.classList.contains("modal_opened")
   ) {
     closeModal(evt.currentTarget);
   }
