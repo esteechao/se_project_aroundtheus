@@ -66,8 +66,6 @@ function setEventListeners(formEl, content) {
     });
 
     toggleButtonState(inputEls, submitButton, content);
-
-    disableButton(submitButton, content);
   }
    
 
