@@ -139,7 +139,7 @@
     margin-bottom: 48px;
   }
 
-  .modal__input.invalid {
+  .modal__input_type_error {
     border-bottom: 2px solid red;
   }
   
