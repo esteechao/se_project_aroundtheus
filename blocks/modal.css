@@ -138,6 +138,10 @@
   .modal__input:last-of-type {
     margin-bottom: 48px;
   }
+
+  .modal__input.invalid {
+    border-bottom: 2px solid red;
+  }
   
   .modal__button {
     border: none;
