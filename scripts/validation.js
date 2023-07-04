@@ -41,8 +41,8 @@ const enableButton = (submitButton, { inactiveButtonClass }) => {
   submitButton.disabled = false;
 };
 
-const toggleButtonState = (inputEl, submitButton, { inactiveButtonClass }) => {
-  if (hasInvalidInput(inputEl)) {
+const toggleButtonState = (inputEls, submitButton, { inactiveButtonClass }) => {
+  if (hasInvalidInput(inputEls)) {
     disableButton(submitButton, { inactiveButtonClass });
     return;
   }
@@ -64,6 +64,8 @@ function setEventListeners(formEl, content) {
         toggleButtonState(inputEls, submitButton, content);
       });
     });
+
+    toggleButtonState(inputEls, submitButton, content);
 
     disableButton(submitButton, content);
   }
