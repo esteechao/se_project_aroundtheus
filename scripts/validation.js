@@ -25,7 +25,7 @@ function checkInputValidity(formEl, inputEl, content) {
 }
  
 function hasInvalidInput(inputList) {
-    return !input.every((inputEl) => inputEl.validity.valid);
+    return !inputList.every((inputEl) => inputEl.validity.valid);
 }
 
 // ! ||--------------------------------------------------------------------------------||
