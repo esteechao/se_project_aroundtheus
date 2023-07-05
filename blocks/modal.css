@@ -5,7 +5,7 @@
     z-index: 999;
     display: flex;
     padding: 0 19px;
-    visibility: none;
+    visibility: hidden;
     pointer-events: none;
     justify-content: center;
     align-items: center;
@@ -71,11 +71,12 @@
   }
 
   .modal__card-image-preview {
-    border: none;
-    max-width: 75vw;
-    max-height: 75vh;
-    -o-object-fit: contain;
-    object-fit: contain;
+      border: none;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain; 
   }
 
   .modal__image-title {
@@ -92,10 +93,10 @@
     border: none;
     background-color: transparent;
     position: absolute;
-    bottom: calc(100% + 5px);
-    left: calc(100% + 5px);
-    width: 40px;
-    height: 40px;
+    top: 10px;
+    right: 10px;
+    width: 26px;
+    height: 26px;
     background-image: url(../images/close-icon.svg);
     background-repeat: no-repeat;
     background-size: contain;
