@@ -27,7 +27,7 @@ const initialCards = [
 
 const cardTemplate = document
   .querySelector("#card-template")
-  .content.querySelector(".card");
+  .content.querySelector(".card"); 
 
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Wrappers                                      ||
@@ -115,7 +115,8 @@ function handleAddCardFormSubmit(evt) {
   closeModal(addCardModal);
   addCardFormElement.reset();
   const createButton = addCardFormElement.querySelector(".modal__button");
-	  toggleButtonState([cardTitleInput, cardUrlInput], createButton, config); 
+    toggleButtonState([cardTitleInput, cardUrlInput], createButton, config);
+ 
 }
 
 function getCardElement(data) {

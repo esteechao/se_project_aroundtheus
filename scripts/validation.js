@@ -54,10 +54,9 @@ const toggleButtonState = (inputEls, submitButton, { inactiveButtonClass }) => {
 // ! ||                             Listener and Validation                            ||
 // ! ||--------------------------------------------------------------------------------||
 function setEventListeners(formEl, content) {
-    const { inputSelector } = content;
+    const {inputSelector}= content;
     const inputEls = [...formEl.querySelectorAll(inputSelector)];
     const submitButton = formEl.querySelector(content.submitButtonSelector);
-  
     inputEls.forEach((inputEl) => {
       inputEl.addEventListener("input", (e) => {
         checkInputValidity(formEl, inputEl, content);
@@ -68,11 +67,10 @@ function setEventListeners(formEl, content) {
     toggleButtonState(inputEls, submitButton, content);
   }
    
-
   function enableValidation(content) {
     const formEls = [...document.querySelectorAll(content.formSelector)];
     formEls.forEach((formEl) => {
-      formEl.addEventListener("submit", (e) => {
+      formEl.addEventListener('submit,' (e) => {
         e.preventDefault();
       });
       setEventListeners(formEl, content);
