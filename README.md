@@ -16,7 +16,7 @@ CSS3: Styling language used for designing the visual layout of the application.
   
 The key features at the moment of the Photo Gallery include:
 
-Interactive Photo Cards: Users can browse through a collection of photo cards, each representing a unique photo. They can also like the photo, delete the photo card, edit the photo card as they wish.
+Interactive Photo Cards: Users can browse through a collection of photo cards, each representing a unique photo. They can also like the photo, delete the photo card, edit the photo cards as they wish.
 
 **Github**
 
