@@ -2,13 +2,13 @@
   
 **Intro**
   
-This application allows users to upload photos with custom captions to a personal photo collection. Users may also create a custom profile. I built modals windows and unique client-side form validation behavior to improve the user's experience. 
+This application allows users to upload photos with custom captions to a personal photo collection. Users may also create a custom profile. I built modal windows and unique client-side form validation behaviour to improve the user's experience. 
   
 **Technologies and Techniques Used**  
   
 *The Web Application is built using the following techniques:
 
-JavaScript: Object-oriented language used to create some interactive pieces on my project. 
+JavaScript: Object-oriented language used to create some interactive pieces on the project. 
 HTML5: Markup language used for structuring the web pages.
 CSS3: Styling language used for designing the visual layout of the application.
   
