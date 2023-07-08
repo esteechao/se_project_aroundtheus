@@ -27,7 +27,6 @@ function checkInputValidity(formEl, inputEl, content) {
 function hasInvalidInput(inputList) {
     return !inputList.every((inputEl) => inputEl.validity.valid); 
 }
-
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Button State                                  ||
 // ! ||--------------------------------------------------------------------------------||
@@ -49,7 +48,6 @@ const toggleButtonState = (inputEls, submitButton, { inactiveButtonClass }) => {
 
   enableButton(submitButton, { inactiveButtonClass });
 };
-
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                             Listener and Validation                            ||
 // ! ||--------------------------------------------------------------------------------||
