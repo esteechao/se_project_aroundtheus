@@ -69,7 +69,7 @@ function setEventListeners(formEl, content) {
     const formEls = [...document.querySelectorAll(content.formSelector)];
     formEls.forEach((formEl) => {
       formEl.addEventListener('submit,' (e) => {
-        e.preventDefault();
+        e.preventDefault(),
       });
       setEventListeners(formEl, content);
     });
