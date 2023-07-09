@@ -26,6 +26,7 @@
     border-radius: 2px;
     cursor: default;
   }
+
   .modal__error {
     opacity: 1;
     position: absolute;
@@ -41,6 +42,7 @@
     line-height: 15px;
     color: #ff0000;
   }
+
   .modal__error_visible {
     opacity: 1;
     -webkit-transition: opacity 0.3s;
@@ -125,6 +127,7 @@
     margin: 0;
     padding-bottom: 54px;
   }
+
   .modal__form {
     display: flex;
     flex-direction: column;
@@ -185,8 +188,6 @@
   @media screen and (max-width: 500px) {
     .modal__container {
       width: 282px;
-      /*
-      height: 322px;*/
       padding: 25px 22px;
     }
     .modal__heading {
