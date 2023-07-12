@@ -104,6 +104,7 @@ function handleProfileFormSubmit(evt) {
   profileDescription.textContent = jobInput.value;
   closeModal(editProfileModal);
 }
+
 function handleAddCardFormSubmit(evt) {
   evt.preventDefault();
   const name = cardTitleInput.value;
@@ -113,7 +114,6 @@ function handleAddCardFormSubmit(evt) {
   addCardFormElement.reset();
   const createButton = addCardFormElement.querySelector(".modal__button");
   toggleButtonState([cardTitleInput, cardUrlInput], createButton, config);
- 
 }
 
 function getCardElement(data) {
