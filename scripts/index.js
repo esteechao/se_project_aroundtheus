@@ -31,6 +31,7 @@ const cardTemplate = document
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Wrappers                                      ||
 // ! ||--------------------------------------------------------------------------------||
+
 const cardsWrap = document.querySelector(".cards__list");
 const editProfileModal = document.querySelector("#edit-modal");
 const addCardModal = document.querySelector("#add-card-modal");
