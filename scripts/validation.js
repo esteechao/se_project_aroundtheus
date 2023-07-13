@@ -1,6 +1,7 @@
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Error Message                                 ||
 // ! ||--------------------------------------------------------------------------------||
+
 function showError(formEl, inputEl, { inputErrorClass, errorClass }) {
   const errorMessageEl = formEl.querySelector(`#${inputEl.id}-error`);
   inputEl.classList.add(inputErrorClass);
@@ -18,6 +19,7 @@ function hideError(formEl, inputEl, { inputErrorClass, errorClass }) {
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                           Validity Check and Input                             ||
 // ! ||--------------------------------------------------------------------------------||
+
 function checkInputValidity(formEl, inputEl, content) {
   if (!inputEl.validity.valid) {
     return showError(formEl, inputEl, content);
