@@ -149,6 +149,7 @@ function getCardElement(data) {
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Event Listeners                               ||
 // ! ||--------------------------------------------------------------------------------||
+
 previewModalCloseButton.addEventListener("click", () =>
   closeModal(previewImageModal)
 );
