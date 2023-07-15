@@ -1,6 +1,7 @@
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Error Message                                 ||
 // ! ||--------------------------------------------------------------------------------||
+
 function showError(formEl, inputEl, { inputErrorClass, errorClass }) {
   const errorMessageEl = formEl.querySelector(`#${inputEl.id}-error`);
   inputEl.classList.add(inputErrorClass);
