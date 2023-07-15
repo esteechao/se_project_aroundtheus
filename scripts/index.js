@@ -28,6 +28,7 @@ const initialCards = [
 const cardTemplate = document
   .querySelector("#card-template")
   .content.querySelector(".card"); 
+  
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Wrappers                                      ||
 // ! ||--------------------------------------------------------------------------------||
