@@ -1,4 +1,3 @@
-
 const initialCards = [
   {
     name: "Yosemite Valley",
