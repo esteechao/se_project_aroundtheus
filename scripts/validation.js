@@ -28,7 +28,6 @@ function checkInputValidity(formEl, inputEl, content) {
 function hasInvalidInput(inputList) {
     return !inputList.every((inputEl) => inputEl.validity.valid); 
 }
-
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Button State                                  ||
 // ! ||--------------------------------------------------------------------------------||
