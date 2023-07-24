@@ -49,7 +49,6 @@ const toggleButtonState = (inputEls, submitButton, { inactiveButtonClass }) => {
 
   enableButton(submitButton, { inactiveButtonClass });
 };
-
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                             Listener and Validation                            ||
 // ! ||--------------------------------------------------------------------------------||
