@@ -28,6 +28,7 @@ const initialCards = [
 const cardTemplate = document
   .querySelector("#card-template")
   .content.querySelector(".card"); 
+
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Wrappers                                      ||
 // ! ||--------------------------------------------------------------------------------||
@@ -40,6 +41,7 @@ const addCardFormElement = addCardModal.querySelector(".modal__form");
 const previewImageModal = document.querySelector("#image-modal");
 const previewImage = previewImageModal.querySelector(".modal__preview-image");
 const previewTitle = previewImageModal.querySelector(".modal__preview-title");
+
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Buttons and DOM nodes                         ||
 // ! ||--------------------------------------------------------------------------------||
