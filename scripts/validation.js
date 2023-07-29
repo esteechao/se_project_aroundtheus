@@ -14,6 +14,7 @@ function hideError(formEl, inputEl, { inputErrorClass, errorClass }) {
   errorMessageEl.textContent = "";
   errorMessageEl.classList.remove(errorClass);
 }
+
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                           Validity Check and Input                             ||
 // ! ||--------------------------------------------------------------------------------||
