@@ -28,7 +28,7 @@ const initialCards = [
 const cardTemplate = document
   .querySelector("#card-template")
   .content.querySelector(".card"); 
-  
+
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Wrappers                                      ||
 // ! ||--------------------------------------------------------------------------------||
@@ -63,6 +63,7 @@ const nameInput = profileFormElement.querySelector(".modal__input_type_name");
 const jobInput = profileFormElement.querySelector(
   ".modal__input_type_description"
 );
+
 const cardTitleInput = addCardFormElement.querySelector(
   ".modal__input_type_title"
 );
