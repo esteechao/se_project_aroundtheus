@@ -67,6 +67,7 @@ const jobInput = profileFormElement.querySelector(
 const cardTitleInput = addCardFormElement.querySelector(
   ".modal__input_type_title"
 );
+
 const cardUrlInput = addCardFormElement.querySelector(".modal__input_type_url");
 
 function closeModal(modal) {
