@@ -164,6 +164,7 @@ profileEditButton.addEventListener("click", () => {
   jobInput.value = profileDescription.textContent;
   openModal(editProfileModal);
 });
+
 profileModalCloseButton.addEventListener("click", () =>
   closeModal(editProfileModal)
 );
