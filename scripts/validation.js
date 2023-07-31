@@ -35,6 +35,7 @@ function hasInvalidInput(inputList) {
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Button State                                  ||
 // ! ||--------------------------------------------------------------------------------||
+
 const disableButton = (submitButton, { inactiveButtonClass }) => {
   submitButton.classList.add(inactiveButtonClass);
   submitButton.disabled = true;
