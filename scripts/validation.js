@@ -58,6 +58,7 @@ const toggleButtonState = (inputEls, submitButton, { inactiveButtonClass }) => {
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                             Listener and Validation                            ||
 // ! ||--------------------------------------------------------------------------------||
+
 function setEventListeners(formEl, content) {
     const {inputSelector}= content;
     const inputEls = [...formEl.querySelectorAll(inputSelector)];
