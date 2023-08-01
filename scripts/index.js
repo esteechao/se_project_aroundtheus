@@ -44,7 +44,6 @@ const previewTitle = previewImageModal.querySelector(".modal__preview-title");
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Buttons and DOM nodes                         ||
 // ! ||--------------------------------------------------------------------------------||
-
 const profileEditButton = document.querySelector(".profile__edit-button");
 const profileModalCloseButton = editProfileModal.querySelector(".modal__close");
 const addCardModalCloseButton = addCardModal.querySelector(".modal__close");
