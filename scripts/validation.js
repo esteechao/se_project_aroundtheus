@@ -18,7 +18,6 @@ function hideError(formEl, inputEl, { inputErrorClass, errorClass }) {
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                           Validity Check and Input                             ||
 // ! ||--------------------------------------------------------------------------------||
-
 function checkInputValidity(formEl, inputEl, content) {
   if (!inputEl.validity.valid) {
     return showError(formEl, inputEl, content);
