@@ -58,7 +58,6 @@ const cardAddSubmitButton = addCardModal.querySelector(".modal__button");
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  form data                                     ||
 // ! ||--------------------------------------------------------------------------------||
-
 const nameInput = profileFormElement.querySelector(".modal__input_type_name");
 const jobInput = profileFormElement.querySelector(
   ".modal__input_type_description"
