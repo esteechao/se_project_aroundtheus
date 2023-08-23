@@ -1,5 +1,4 @@
 export default class Card {
-    constructor () {
-        
+    constructor ({ name, link }) {
     }
 }
