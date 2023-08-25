@@ -75,7 +75,7 @@ function setEventListeners(formEl, content) {
       setEventListeners(formEl, content);
     });
   }
-
+  
 const config = {
     formSelector: ".modal__form",
     inputSelector: ".modal__input",
