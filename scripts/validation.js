@@ -14,6 +14,7 @@ function hideError(formEl, inputEl, { inputErrorClass, errorClass }) {
   errorMessageEl.textContent = "";
   errorMessageEl.classList.remove(errorClass);
 }
+
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                           Validity Check and Input                             ||
 // ! ||--------------------------------------------------------------------------------||
@@ -75,7 +76,7 @@ function setEventListeners(formEl, content) {
       setEventListeners(formEl, content);
     });
   }
-  
+
 const config = {
     formSelector: ".modal__form",
     inputSelector: ".modal__input",
