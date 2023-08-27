@@ -66,6 +66,7 @@ const previewModalCloseButton =
   previewImageModal.querySelector(".modal__close");
 
 const cardAddSubmitButton = addCardModal.querySelector(".modal__button");
+
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  form data                                     ||
 // ! ||--------------------------------------------------------------------------------||
