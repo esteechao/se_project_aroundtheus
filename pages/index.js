@@ -32,7 +32,8 @@ const cardData = {
   link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemite.jpg",
 }
 
-const card = new card (cardData);
+const card = new card (cardData, "#card-template");
+card.getView()
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Templates                                     ||
 // ! ||--------------------------------------------------------------------------------||
