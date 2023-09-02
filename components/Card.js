@@ -19,12 +19,15 @@ export default class Card {
        })
     }
 
+    _handleDeleteCard() {
+        this._cardElement.remove();
+    }
+
     _handleLikeIcon(){
         this._cardElement
         .querySelector(".card__like-button")
         .classList.toggle("card__like-button_is-active");
     }
-
 
     getView() {
         this._cardElement = document
