@@ -5,6 +5,10 @@ export default class Card {
         this._cardSelector = cardSelector;
     }
 
+    _setEventListners() {
+        
+    }
+
     getView() {
         //get the card view
         //set event listners
