@@ -11,7 +11,7 @@ export default class Card {
 
     getView() {
         //get the card view
-        //set event listners
+        this._setEventListners()
         //return the card
     }
 }
