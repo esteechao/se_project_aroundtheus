@@ -1,4 +1,4 @@
-import Card from './Card.js';
+import Card from './card.js';
 
 const initialCards = [
   {
@@ -27,13 +27,11 @@ const initialCards = [
   },
 ];
 
-const cardData = {
-  name: "Yosemite Valley",
-  link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemite.jpg",
-}
-
-const card = new card (cardData, "#card-template");
-card.getView();
+initialCards.forEach((cardData) => {
+  const cardInstance = new Card(cardData, "#card-template");
+  const cardElement = cardInstance.getView();
+  renderCard(cardElement, cardsWrap);
+});
 
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Templates                                     ||
@@ -110,8 +108,7 @@ function closeByClick(evt) {
   }
 }
 
-function renderCard(cardData, wrapper) {
-  const cardElement = getCardElement(cardData);
+function renderCard(cardElement, wrapper) {
   wrapper.prepend(cardElement);
 }
 
@@ -139,9 +136,9 @@ function getCardElement(data) {
   const cardTitle = cardElement.querySelector(".card__title");
   const likeButton = cardElement.querySelector(".card__like-button");
   const deleteButton = cardElement.querySelector(".card__delete-button");
-  deleteButton.addEventListener("click", () => {
-    cardElement.remove();
-  });
+  //deleteButton.addEventListener("click", handleDeleteCard);
+  return cardElement;
+  };
 
   cardImage.addEventListener("click", () => {
     previewImage.src = data.link;
@@ -159,7 +156,7 @@ function getCardElement(data) {
   cardTitle.textContent = data.name;
 
   return cardElement;
-}
+
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Event Listeners                               ||
 // ! ||--------------------------------------------------------------------------------||

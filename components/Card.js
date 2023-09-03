@@ -3,24 +3,28 @@ export default class Card {
         this._name = name;
         this._link = link;
         this._cardSelector = cardSelector;
+        this._cardElement = null;
     }
 
-    _setEventListners() {
-        //".card_like-button"
-        this._cardElement.querySelector(".card__like-button")
-        .addEventListner('click', () =>{
-            this._handleLikeIcon();
+    _getTemplate() {
+        const cardElement = document
+          .querySelector(this._cardSelector)
+          .content.querySelector(".card")
+          .cloneNode(true);
+        return cardElement;
+      }    
+
+    _setEventListeners() {
+        this._likeButton.addEventListener("click", this._handleLikeIcon.bind(this));
+        this._deleteButton.addEventListener("click", this._handleDeleteCard.bind(this));
+        this._cardElement.querySelector(".card__like-button").addEventListener('click', () => {
+          this._handleLikeIcon();
         });
-        //".card_delete-button"
-       this._cardElement.querySelector(
-        ".card__delete-button"
-        ).addEventListner('click',() => {
-        this._handleDeleteCard();
-       })
-    }
+      }
 
     _handleDeleteCard() {
         this._cardElement.remove();
+        this._element = null;
     }
 
     _handleLikeIcon(){
@@ -30,15 +34,21 @@ export default class Card {
     }
 
     getView() {
-        this._cardElement = document
-            .querySelector(this._cardSelector)
-            .content.querySelector(".card")
-            .cloneNode(true);
-
-        //get the card view
-        //set even listeners
-        this._setEventListners();
-        //return the card
+        const cardTemplate = document
+          .querySelector(this._cardSelector)
+          .content.querySelector(".card");
+    
+        this._cardElement = cardTemplate.cloneNode(true);
+    
+        const cardTitleEl = this._cardElement.querySelector(".card__title");
+        const cardImageEl = this._cardElement.querySelector(".card__image");
+    
+        cardTitleEl.textContent = this._name;
+        cardImageEl.src = this._link;
+        cardImageEl.alt = "Image of " + this._name;
+    
+        this._setEventListeners();
+    
+        return this._cardElement;
+      }
     }
-}
-
