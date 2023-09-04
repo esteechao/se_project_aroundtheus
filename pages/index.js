@@ -32,7 +32,6 @@ initialCards.forEach((cardData) => {
   const cardElement = cardInstance.getView();
   renderCard(cardElement, cardsWrap);
 });
-
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Templates                                     ||
 // ! ||--------------------------------------------------------------------------------||
