@@ -1,5 +1,5 @@
 import Card from '../components/Card.js';
-import FormValidator from './FormValidator.js';
+import FormValidator from '../components/FormValidator.js';
 
 const initialCards = [
   {
@@ -150,11 +150,11 @@ function getCardElement(data) {
     likeButton.classList.toggle("card__like-button_active");
   });
 
-  cardImage.src = data.link;
-  cardImage.alt = data.name;
-  cardTitle.textContent = data.name;
+  //cardImage.src = data.link;
+  //cardImage.alt = data.name;
+  //cardTitle.textContent = data.name;
 
-  return cardElement;
+  //return cardElement;
 
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Event Listeners                               ||
