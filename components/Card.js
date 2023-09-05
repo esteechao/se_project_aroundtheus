@@ -4,6 +4,8 @@ export default class Card {
         this._link = link;
         this._cardSelector = cardSelector;
         this._cardElement = null;
+        this._likeButton = null;
+        this._deleteButton = null;
     }
 
     _getTemplate() {
@@ -11,6 +13,10 @@ export default class Card {
           .querySelector(this._cardSelector)
           .content.querySelector(".card")
           .cloneNode(true);
+
+          this._likeButton = cardElement.querySelector(".card__like-button");
+          this._deleteButton = cardElement.querySelector(".card__delete-button");
+          
         return cardElement;
       }    
 
