@@ -27,10 +27,12 @@ const initialCards = [
   },
 ];
 
-initialCards.forEach((cardData) => {
+function renderCard(cardElement, cardsWrap) {
   const cardInstance = new Card(cardData, "#card-template");
   const cardElement = cardInstance.getView();
-  renderCard(cardElement, cardsWrap);
+}
+initialCards.forEach((cardData) => {
+  renderCard(cardData,"#card-template", cardsWrap);
 });
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Templates                                     ||

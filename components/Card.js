@@ -14,9 +14,6 @@ export default class Card {
           .content.querySelector(".card")
           .cloneNode(true);
 
-          this._likeButton = cardElement.querySelector(".card__like-button");
-          this._deleteButton = cardElement.querySelector(".card__delete-button");
-          
         return cardElement;
       }    
 
@@ -48,6 +45,8 @@ export default class Card {
     
         const cardTitleEl = this._cardElement.querySelector(".card__title");
         const cardImageEl = this._cardElement.querySelector(".card__image");
+        const likeButton = this._likeButton.querySelector("card__like-button");
+        const deleteButton = this._deleteButton.querySelector("card__delete-button");
     
         cardTitleEl.textContent = this._name;
         cardImageEl.src = this._link;
