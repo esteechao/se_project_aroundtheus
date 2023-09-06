@@ -3,9 +3,6 @@ export default class Card {
         this._name = name;
         this._link = link;
         this._cardSelector = cardSelector;
-        this._cardElement = null;
-        this._likeButton = null;
-        this._deleteButton = null;
     }
 
     _getTemplate() {
@@ -45,8 +42,8 @@ export default class Card {
     
         const cardTitleEl = this._cardElement.querySelector(".card__title");
         const cardImageEl = this._cardElement.querySelector(".card__image");
-        const likeButton = this._likeButton.querySelector("card__like-button");
-        const deleteButton = this._deleteButton.querySelector("card__delete-button");
+        this._likeButton = this._cardElement.querySelector(".card__like-button");
+        this._deleteButton = this._cardElement.querySelector(".card__delete-button");
     
         cardTitleEl.textContent = this._name;
         cardImageEl.src = this._link;

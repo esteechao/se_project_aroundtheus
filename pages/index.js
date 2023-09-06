@@ -26,14 +26,6 @@ const initialCards = [
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lago.jpg ",
   },
 ];
-
-function renderCard(cardElement, cardsWrap) {
-  const cardInstance = new Card(cardData, "#card-template");
-  const cardElement = cardInstance.getView();
-}
-initialCards.forEach((cardData) => {
-  renderCard(cardData,"#card-template", cardsWrap);
-});
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  Templates                                     ||
 // ! ||--------------------------------------------------------------------------------||
@@ -80,6 +72,15 @@ const cardTitleInput = addCardFormElement.querySelector(
 
 const cardUrlInput = addCardFormElement.querySelector(".modal__input_type_url");
 
+function renderCard(cardData) {
+  const cardInstance = new Card(cardData, "#card-template");
+  return cardInstance.getView(); 
+}
+initialCards.forEach((cardData) => {
+  const cardElement = renderCard(cardData);
+  cardsWrap.prepend(cardElement);
+});
+
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
   document.removeEventListener("keyup", closeByEscape);
@@ -108,9 +109,9 @@ function closeByClick(evt) {
   }
 }
 
-function renderCard(cardElement, wrapper) {
-  wrapper.prepend(cardElement);
-}
+//function renderCard(cardElement, wrapper) {
+  //wrapper.prepend(cardElement);
+//}
 
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
