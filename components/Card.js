@@ -40,6 +40,10 @@ export default class Card {
         .classList.toggle("card__like-button_is-active");
     }
 
+    _handleImageClick() {
+      
+    }
+
     getView() {
         const cardTemplate = document
           .querySelector(this._cardSelector)
