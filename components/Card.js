@@ -17,15 +17,6 @@ export default class Card {
     _setEventListeners() {
         this._likeButton.addEventListener("click", this._handleLikeIcon.bind(this));
         this._deleteButton.addEventListener("click", this._handleDeleteCard.bind(this));
-        
-        //this._likeButton.addEventListener("click", this._handleLikeIcon.bind(this));
-        //this._deleteButton.addEventListener("click",this._handleDeleteCard.bind(this)
-        
-        this._cardElement
-        .querySelector(".card__like-button")
-        .addEventListener('click', () => {
-          this._handleLikeIcon();
-        });
       }
 
     _handleDeleteCard() {
