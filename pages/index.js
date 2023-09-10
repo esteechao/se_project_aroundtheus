@@ -148,9 +148,9 @@ function handleAddCardFormSubmit(evt) {
     //openModal(previewImageModal);
   //});
 
-  likeButton.addEventListener("click", () => {
-    likeButton.classList.toggle("card__like-button_active");
-  });
+  //likeButton.addEventListener("click", () => {
+    //likeButton.classList.toggle("card__like-button_active");
+  //});
 
   //cardImage.src = data.link;
   //cardImage.alt = data.name;
