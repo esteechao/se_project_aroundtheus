@@ -131,22 +131,22 @@ function handleAddCardFormSubmit(evt) {
   toggleButtonState([cardTitleInput, cardUrlInput], createButton, config);
 }
 
-function getCardElement(data) {
-  const cardElement = cardTemplate.cloneNode(true);
-  const cardImage = cardElement.querySelector(".card__image");
-  const cardTitle = cardElement.querySelector(".card__title");
-  const likeButton = cardElement.querySelector(".card__like-button");
-  const deleteButton = cardElement.querySelector(".card__delete-button");
+//function getCardElement(data) {
+  //const cardElement = cardTemplate.cloneNode(true);
+  //const cardImage = cardElement.querySelector(".card__image");
+  //const cardTitle = cardElement.querySelector(".card__title");
+  //const likeButton = cardElement.querySelector(".card__like-button");
+  //const deleteButton = cardElement.querySelector(".card__delete-button");
   //deleteButton.addEventListener("click", handleDeleteCard);
-  return cardElement;
-  };
+  //return cardElement;
+  //};
 
-  cardImage.addEventListener("click", () => {
-    previewImage.src = data.link;
-    previewImage.alt = data.name;
-    previewTitle.textContent = data.name;
-    openModal(previewImageModal);
-  });
+  //cardImage.addEventListener("click", () => {
+    //previewImage.src = data.link;
+    //previewImage.alt = data.name;
+    //previewTitle.textContent = data.name;
+    //openModal(previewImageModal);
+  //});
 
   likeButton.addEventListener("click", () => {
     likeButton.classList.toggle("card__like-button_active");

@@ -43,14 +43,14 @@ export default class Card {
         this._cardElement = cardTemplate.cloneNode(true);
     
         const cardTitleEl = this._cardElement.querySelector(".card__title");
-        const cardImageEl = this._cardElement.querySelector(".card__image");
+        this._cardImageEl = this._cardElement.querySelector(".card__image");
         this._likeButton = this._cardElement.querySelector(".card__like-button");
         this._deleteButton = this._cardElement.querySelector(".card__delete-button");
     
         cardTitleEl.textContent = this._name;
         this._cardImage = this._cardElement.querySelector(".card__image");
-        cardImageEl.src = this._link;
-        cardImageEl.alt = "Image of " + this._name;
+        this._cardImageEl.src = this._link;
+        this._cardImageEl.alt = "Image of " + this._name;
     
         this._setEventListeners();
     
