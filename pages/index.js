@@ -92,6 +92,7 @@ function renderCard(cardData) {
   const cardInstance = new Card(cardData, "#card-template", handleImageClick);
   return cardInstance.getView(); 
 }
+
 initialCards.forEach((cardData) => {
   const cardElement = renderCard(cardData);
   cardsWrap.prepend(cardElement);
@@ -140,11 +141,12 @@ function handleAddCardFormSubmit(evt) {
   evt.preventDefault();
   const name = cardTitleInput.value;
   const link = cardUrlInput.value;
-  renderCard({ name, link }, cardsWrap);
+  const cardElement = renderCard({ name, link }, cardsWrap);
   closeModal(addCardModal);
   addCardFormElement.reset();
-  const createButton = addCardFormElement.querySelector(".modal__button");
-  toggleButtonState([cardTitleInput, cardUrlInput], createButton, config);
+  addCardFormValidtor.toggleButtonState();
+  //const createButton = addCardFormElement.querySelector(".modal__button");
+  //toggleButtonState([cardTitleInput, cardUrlInput], createButton, config);
 }
 
 function handleImageClick(name, link) {
