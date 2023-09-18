@@ -70,9 +70,9 @@ const config = {
   errorClass: "modal__error_visible",
 };
 
-const addCardFormEl = document.querySelector('add-card-form');
+const addCardFormEl = document.querySelector('#add-card-form');
 const addCardFormValidtor = new FormValidator(config, addCardFormEl);
-addCardFormValidtor.enableValidation();
+addCardFormValidator.enableValidation();
 
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  form data                                     ||
