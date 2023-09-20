@@ -73,7 +73,6 @@ const addCardFormEl = document.querySelector('#add-card-form');
 const addCardFormValidtor = new FormValidator(config, addCardFormEl);
 addCardFormValidator.enableValidation();
 
-
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                  form data                                     ||
 // ! ||--------------------------------------------------------------------------------||
