@@ -21,7 +21,6 @@ export default class Card {
         this._cardImage.addEventListener("click", () => this._handleImageClick(this._name, this._link));
     }
     
-
     _handleDeleteCard() {
         this._cardElement.remove();
         this._element = null;
