@@ -6,7 +6,7 @@ export default class Card {
         this._handleImageClick = handleImageClick;
     }
 
-    _getTemplate() {
+_getTemplate() {
         const cardElement = document
           .querySelector(this._cardSelector)
           .content.querySelector(".card")
@@ -15,13 +15,13 @@ export default class Card {
         return cardElement;
       }    
 
-    _setEventListeners() {
+_setEventListeners() {
         this._likeButton.addEventListener("click", this._handleLikeIcon.bind(this));
         this._deleteButton.addEventListener("click", this._handleDeleteCard.bind(this));
         this._cardImage.addEventListener("click", () => this._handleImageClick(this._name, this._link));
     }
     
-    _handleDeleteCard() {
+_handleDeleteCard() {
         this._cardElement.remove();
         this._element = null;
     }
