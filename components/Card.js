@@ -32,7 +32,7 @@ _handleLikeIcon(){
         .classList.toggle("card__like-button_active");
     }
 
-   _handleImageClick() {
+_handleImageClick() {
       
     }
 
