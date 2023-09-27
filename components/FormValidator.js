@@ -24,7 +24,7 @@ export default class FormValidator {
       errorElement.textContent = "";
     }
   
-    _checkInputValidity(inputElement) {
+    _checkInputValidity() {
       
       const inputList = [
         ...this._formElement.querySelectorAll(this._settings.inputSelector),
@@ -34,7 +34,7 @@ export default class FormValidator {
       }
   
     toggleButtonState() {
-      const isValid = this._inputs.every((input) => input.validity.valid);
+      const isValid = this._checkInputValidity;
   
       if (isValid) {
         this._submitButton.classList.remove(this._settings.inactiveButtonClass);
