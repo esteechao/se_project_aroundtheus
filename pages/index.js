@@ -156,7 +156,6 @@ function handleImageClick(name, link) {
 }
 
 function toggleButtonState() {
-
 }
 
 //function getCardElement(data) {
