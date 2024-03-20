@@ -1,13 +1,12 @@
 // FormValidator.js
 export default class FormValidator {
     constructor(settings, formElement) {
-      this._settings = settings;
+      this._settings = ettings;
       this._formElement = formElement;
       this._submitButton = this._formElement.querySelector{
         this._settings.submitButtonSelector
       };
     }
-    
     _showInputError(inputElement, errorMessage) {
       const errorElement = this._formElement.querySelector(
         `#${inputElement.id}-error`
